@@ -4,34 +4,29 @@ include('includes/config.php');
 // if(strlen($_SESSION['alogin'])==0){
     
 // }
-// if(isset($_POST['signin']))
-//     {
-//     $uname=$_POST['username'];
-//     $password=md5($_POST['password']);
-//     try {
-        
-   
-//     $sql ="SELECT UserName,Password FROM admin WHERE UserName=:uname and Password=:password";
-//     $query= $dbh -> prepare($sql);
-//     $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
-//     $query-> bindParam(':password', $password, PDO::PARAM_STR);
-//     $query-> execute();
-//     $results=$query->fetchAll(PDO::FETCH_OBJ);
-//     if($query->rowCount() > 0)
-//     {
-//     $_SESSION['alogin']=$_POST['username'];
-//     header('location:dashboard.php');
-//     } else{
+if(isset($_POST['signin']))
+    {
+    $uname=$_POST['username'];
+    $password=md5($_POST['password']);
+    $sql ="SELECT UserName,Password FROM admin WHERE UserName=:uname and Password=:password";
+    $query= $dbh -> prepare($sql);
+    $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
+    $query-> bindParam(':password', $password, PDO::PARAM_STR);
+    $query-> execute();
+    $results=$query->fetchAll(PDO::FETCH_OBJ);
+    if($query->rowCount() > 0)
+    {
+    $_SESSION['alogin']=$_POST['username'];
+    header('location:dashboard.php');
+    } else{
       
-//       echo "<script>alert('Invalid Details');</script>";
+      echo "<script>alert('Invalid Details');</script>";
     
-//     }
+    }
     
-//     }
+    }
     
-// } catch (\Throwable $th) {
-//     echo $th;
-// }
+
 
 ?>
 
@@ -101,7 +96,7 @@ include('includes/config.php');
         
         
         <!-- Javascripts -->
-        <script src="../assets/plugins/materialize/js/materi.min.js"></script>
+        <script src="../assets/plugins/materialize/js/materialize.min.js"></script>
         <script src="../assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
         <script src="../assets/plugins/jquery-blockui/jquery.blockui.js"></script>
         <script src="../assets/js/alpha.min.js"></script>

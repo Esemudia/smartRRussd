@@ -274,7 +274,7 @@ error:function (){}
         <div class="left-sidebar-hover"></div>
         
         <!-- Javascripts -->
-        <script src="../assets/plugins/materialize/js/materi.min.js"></script>
+        <script src="../assets/plugins/materialize/js/materialize.min.js"></script>
         <script src="../assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
         <script src="../assets/plugins/jquery-blockui/jquery.blockui.js"></script>
         <script src="../assets/js/alpha.min.js"></script>

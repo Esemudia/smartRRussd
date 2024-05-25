@@ -1,4 +1,3 @@
 <?php
-header("Location: admin/dashboard.php");
-exit();
+    header('location:admin/dashboard.php');
 ?>
