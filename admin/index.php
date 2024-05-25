@@ -4,34 +4,34 @@ include('includes/config.php');
 // if(strlen($_SESSION['alogin'])==0){
     
 // }
-if(isset($_POST['signin']))
-    {
-    $uname=$_POST['username'];
-    $password=md5($_POST['password']);
-    try {
+// if(isset($_POST['signin']))
+//     {
+//     $uname=$_POST['username'];
+//     $password=md5($_POST['password']);
+//     try {
         
    
-    $sql ="SELECT UserName,Password FROM admin WHERE UserName=:uname and Password=:password";
-    $query= $dbh -> prepare($sql);
-    $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
-    $query-> bindParam(':password', $password, PDO::PARAM_STR);
-    $query-> execute();
-    $results=$query->fetchAll(PDO::FETCH_OBJ);
-    if($query->rowCount() > 0)
-    {
-    $_SESSION['alogin']=$_POST['username'];
-    header('location:dashboard.php');
-    } else{
+//     $sql ="SELECT UserName,Password FROM admin WHERE UserName=:uname and Password=:password";
+//     $query= $dbh -> prepare($sql);
+//     $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
+//     $query-> bindParam(':password', $password, PDO::PARAM_STR);
+//     $query-> execute();
+//     $results=$query->fetchAll(PDO::FETCH_OBJ);
+//     if($query->rowCount() > 0)
+//     {
+//     $_SESSION['alogin']=$_POST['username'];
+//     header('location:dashboard.php');
+//     } else{
       
-      echo "<script>alert('Invalid Details');</script>";
+//       echo "<script>alert('Invalid Details');</script>";
     
-    }
+//     }
     
-    }
+//     }
     
-} catch (\Throwable $th) {
-    echo $th;
-}
+// } catch (\Throwable $th) {
+//     echo $th;
+// }
 
 ?>
 
