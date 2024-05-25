@@ -52,6 +52,10 @@ $error="Something went wrong. Please try again";
         <link href="../assets/css/custom.css" rel="stylesheet" type="text/css"/>
          <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
         <script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">  
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
 
   <style>
         .errorWrap {

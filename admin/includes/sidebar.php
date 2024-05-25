@@ -1,5 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-      rel="stylesheet">  
+
      <aside id="slide-out" class="side-nav white fixed">
                 <div class="side-nav-wrapper">
                     <div class="sidebar-profile">
