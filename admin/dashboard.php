@@ -25,7 +25,11 @@ else{
         <!-- Styles -->
         <link type="text/css" rel="stylesheet" href="../assets/plugins/materialize/css/materialize.min.css"/>
         <link type="text/css" rel="stylesheet" href="../assets/plugins/materialize/css/materialize.css"/>
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+        
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">  
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
         <link href="../assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
         <link href="../assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
 
