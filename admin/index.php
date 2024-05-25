@@ -52,7 +52,7 @@ if(isset($_POST['signin']))
         <script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
     </head>
     <body>
-<nav class="navbar navbar-expand-lg navbar-light py-3" style="background:#546e7a !important">
+<nav class="navbar navbar-expand-lg navbar-light py-3" style="background:#f28907 !important">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
