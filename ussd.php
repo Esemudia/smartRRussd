@@ -17,7 +17,7 @@ switch ($text) {
     case '':
         try {
             $query = 'SELECT * FROM language';
-            $stmt = $pdo->query($query);
+            $stmt = $dbh->query($query);
             $results = $stmt->fetchAll();
 
             if (count($results) > 0) {
@@ -45,7 +45,7 @@ switch ($text) {
     case '1':
         try {
             $query = 'SELECT questions FROM question WHERE language="English"';
-            $stmt = $pdo->query($query);
+            $stmt = $dbh->query($query);
             $results = $stmt->fetchAll();
 
             if (count($results) > 0) {
@@ -59,7 +59,7 @@ switch ($text) {
                 // Additional nested logic for text == '1*1'
                 if ($text === '1*1') {
                     $query = 'SELECT state FROM state';
-                    $stmt = $pdo->query($query);
+                    $stmt = $dbh->query($query);
                     $result3 = $stmt->fetchAll();
                     if (count($result3) > 0) {
                         foreach ($result3 as $row) {
@@ -73,7 +73,7 @@ switch ($text) {
                         // Further logic for selecting location based on state
                         if ($text === '1') {
                             $query = 'SELECT location FROM location WHERE state="' . $reps[0] . '"';
-                            $stmt = $pdo->query($query);
+                            $stmt = $dbh->query($query);
                             $locations = $stmt->fetchAll();
                             // Add more logic here if needed
                         }
